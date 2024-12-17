@@ -1,6 +1,3 @@
-DEMO:
-https://main.dh24zo2musdjb.amplifyapp.com/
-
 To Setup and Run locally:
 
 | Command       | Instructions                                         |
