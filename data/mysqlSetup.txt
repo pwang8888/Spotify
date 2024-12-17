@@ -1,0 +1,23 @@
+CREATE DATABASE SWIFTIFY; USE SWIFTIFY;
+
+CREATE TABLE Albums (
+ album_id varchar(22) PRIMARY KEY,
+ title varchar(32),
+ release_date varchar(10),
+ thumbnail_url varchar(64));
+
+CREATE TABLE Songs (
+song_id varchar(22) PRIMARY KEY,
+album_id varchar(22),
+title varchar(128),
+number int,
+duration int,
+plays int,
+danceability float,
+energy float,
+valence float,
+tempo int,
+key_mode varchar(8),
+explicit bool,
+FOREIGN KEY (album_id) REFERENCES Albums (album_id)
+);
